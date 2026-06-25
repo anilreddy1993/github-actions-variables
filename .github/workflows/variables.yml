@@ -33,10 +33,11 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-    - name: echo test
+    - name: Install and run cowsay
       run: |
         whoami
-        apt install cowsay
+        sudo apt-get update
+        sudo apt-get install -y cowsay
         cowsay "Hello Anil"
         echo 'Deploy'
 
