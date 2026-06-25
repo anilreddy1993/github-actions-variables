@@ -20,4 +20,4 @@ jobs:
         df -h
         uname -a
         ifconfig
-        ping 8.8.8.8
+        cat /var/log/messages
