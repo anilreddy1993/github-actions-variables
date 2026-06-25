@@ -21,4 +21,23 @@ jobs:
         uname -a
         ifconfig
         ls /
-        dmesg
+        
+  Test:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: echo test
+      run: echo 'Test'
+
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: echo test
+      run: |
+        apk add cowsay
+        cowsay "Hello Anil"
+        echo 'Deploy'
+
+
+
