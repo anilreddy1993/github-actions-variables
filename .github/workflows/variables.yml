@@ -13,3 +13,11 @@ jobs:
     steps:
     - name: Echo ACCESS_ID
       run: echo $ACCESS_ID
+
+    - name: Echo linux commands
+      run: |
+        pwd
+        df -h
+        uname -a
+        ifconfig
+        ping 8.8.8.8
