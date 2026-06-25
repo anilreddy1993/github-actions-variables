@@ -35,6 +35,7 @@ jobs:
     steps:
     - name: echo test
       run: |
+        whoami
         apt install cowsay
         cowsay "Hello Anil"
         echo 'Deploy'
