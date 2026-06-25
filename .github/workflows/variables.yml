@@ -35,7 +35,7 @@ jobs:
     steps:
     - name: echo test
       run: |
-        apk add cowsay
+        apt install cowsay
         cowsay "Hello Anil"
         echo 'Deploy'
 
